@@ -1,5 +1,11 @@
-export const ADD_TO_CART = 'ADD_TO_CART';
-export const REMOVE_ITEM = 'REMOVE_ITEM';
-export const SUB_QUANTITY = 'SUB_QUANTITY';
-export const ADD_QUANTITY = 'ADD_QUANTITY';
-export const ADD_SHIPPING = 'ADD_SHIPPING';
+export const ADD_CAT_REQUEST = 'ADD_CAT_REQUEST';
+export const ADD_CAT_SUCCESS = 'ADD_CAT_SUCCESS';
+export const ADD_CAT_ERROR = 'ADD_CAT_ERROR';
+
+export const DELETE_CAT_REQUEST = 'DELETE_CAT_REQUEST';
+export const DELETE_CAT_SUCCESS = 'DELETE_CAT_SUCCESS';
+export const DELETE_CAT_ERROR = 'DELETE_CAT_ERROR';
+
+export const EDIT_CAT_REQUEST = 'EDIT_CAT_REQUEST';
+export const EDIT_CAT_SUCCESS = 'EDIT_CAT_SUCCESS';
+export const EDIT_CAT_ERROR = 'EDIT_CAT_ERROR';

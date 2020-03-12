@@ -1,7 +1,11 @@
 import { combineReducers } from 'redux';
 // import freezeReducer from './freeze';
-import cartReducer from './cart/cartReducer';
+import catReducer from './cat/catReducer';
+import personReducer from './person/personReducer';
+import auth from './auth';
 
 export default combineReducers({
-  cartReducer,
+  catReducer,
+  personReducer,
+  auth,
 });

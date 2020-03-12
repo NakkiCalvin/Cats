@@ -1,12 +1,13 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-
-import Dashboard from '../dashboard';
+import Home from '../../features/MainPage/Home/Home';
 
 const Main = () => (
   <div>
     <Switch>
-      <Route path="/dashboard" component={Dashboard} />
+      <Route path="/" component={Home} />
+      <Route path="/Cats" component={Home} />
+      <Route path="/Persons" component={Home} />
     </Switch>
   </div>
 );

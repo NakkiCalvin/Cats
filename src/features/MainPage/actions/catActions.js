@@ -1,36 +1,20 @@
-import {
-  ADD_TO_CART,
-  REMOVE_ITEM,
-  SUB_QUANTITY,
-  ADD_QUANTITY,
-  ADD_SHIPPING,
-} from './action-types/cart-actions';
+import * as t from './action-types/cat-actions';
 
-// add cart action
-export const addToCart = id => {
+export const addCat = data => {
   return {
-    type: ADD_TO_CART,
-    id,
+    type: t.ADD_CAT_REQUEST,
+    payload: data,
   };
 };
-// remove item action
-export const removeItem = id => {
+export const deleteCat = data => {
   return {
-    type: REMOVE_ITEM,
-    id,
+    type: t.DELETE_CAT_REQUEST,
+    payload: data,
   };
 };
-// subtract qt action
-export const subtractQuantity = id => {
+export const editCat = data => {
   return {
-    type: SUB_QUANTITY,
-    id,
-  };
-};
-// add qt action
-export const addQuantity = id => {
-  return {
-    type: ADD_QUANTITY,
-    id,
+    type: t.EDIT_CAT_REQUEST,
+    payload: data,
   };
 };
